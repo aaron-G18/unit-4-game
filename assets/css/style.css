@@ -1,0 +1,35 @@
+.gem:hover {
+    cursor: pointer;
+}
+
+.gem1 {
+    background-image: url("../images/gem1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 90px;
+    width: 90px;
+}
+
+.gem2 {
+    background-image: url("../images/gem2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 90px;
+    width: 90px;
+}
+
+.gem3 {
+    background-image: url("../images/gem3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 90px;
+    width: 90px;
+}
+
+.gem4 {
+    background-image: url("../images/gem4.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 90px;
+    width: 90px;
+}
