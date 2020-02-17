@@ -7,7 +7,7 @@ var lossesHTML = $("#losses");
 var randNumber;
 var randNumberHTML = $("#randNumber");
 var userScore = 0;
-var userScoreHTML = $(".userScore");
+var userScoreHTML = $("#userScore");
 var gem1Points;
 var gem2Points;
 var gem3Points;

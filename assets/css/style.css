@@ -1,3 +1,7 @@
+body {
+    background-image: url(../images/dry-dirt-texture\ copy.jpg);
+}
+
 div {
     text-align: center;
     margin: auto;
@@ -6,7 +10,15 @@ div {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 56px;
+    font-weight: bold;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-text-fill-color: #D4A07F;
+
+
+    text-shadow: -2px 0 #D4C77F, 0 2px #D4C77F, 2px 0 #D4C77F, 0 -2px #D4C77F, 6px 6px 3px black;
+
 }
 
 p {
@@ -14,15 +26,61 @@ p {
 }
 
 .instructions {
-    border: 2px solid black;
+    border: 2px solid #D4C77F;
+    background-color: #D4A07F;
     max-width: 700px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: black;
+    box-shadow: 6px 6px 3px black;
+}
+
+.match-box {
+    max-width: 500px;
 }
 
 .match-number {
-    border: 2px solid black;
+    float: left;
+    border: 2px solid #D4C77F;
+    background-color: #D4A07F;
+    min-width: 150px;
+    min-height: 120px;
+    box-shadow: 6px 6px 3px black;
+}
+
+#randNumber {
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+.player-score {
+    float: right;
+    border: 2px solid #D4C77F;
+    background-color: #D4A07F;
+    min-width: 150px;
+    min-height: 120px;
+    box-shadow: 6px 6px 3px black;
+}
+
+#userScore {
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+
+
+.wins-losses {
+    clear: both;
+    border: 2px solid #D4C77F;
+    background-color: #D4A07F;
     max-width: 150px;
     min-height: 150px;
+    box-shadow: 6px 6px 3px black;
+}
 
+.gems {
+    border: 2px solid #D4C77F;
+    max-width: 400px;
 }
 
 .gem:hover {
@@ -30,34 +88,30 @@ p {
 }
 
 .gem1 {
-    background-image: url("../images/gem1.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    /* background-color: grey; */
     height: 90px;
     width: 90px;
 }
 
 .gem2 {
-    background-image: url("../images/gem2.png");
-    background-repeat: no-repeat;
-    background-position: center;
     height: 90px;
     width: 90px;
 }
 
 .gem3 {
-    background-image: url("../images/gem3.png");
-    background-repeat: no-repeat;
-    background-position: center;
     height: 90px;
     width: 90px;
 }
 
 .gem4 {
-    background-image: url("../images/gem4.png");
-    background-repeat: no-repeat;
-    background-position: center;
     height: 90px;
     width: 90px;
+}
+
+.message {
+    max-width: 700px;
+    border: 2px solid #D4C77F;
+    background-color: #D4A07F;
+    min-height: 30px;
+    box-shadow: 6px 6px 3px black;
+    padding-top: 5px;
 }
