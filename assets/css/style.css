@@ -1,3 +1,30 @@
+div {
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+p {
+    margin: 10px;
+}
+
+.instructions {
+    border: 2px solid black;
+    max-width: 700px;
+}
+
+.match-number {
+    border: 2px solid black;
+    max-width: 150px;
+    min-height: 150px;
+
+}
+
 .gem:hover {
     cursor: pointer;
 }
@@ -6,6 +33,7 @@
     background-image: url("../images/gem1.png");
     background-repeat: no-repeat;
     background-position: center;
+    /* background-color: grey; */
     height: 90px;
     width: 90px;
 }
