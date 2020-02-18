@@ -13,11 +13,13 @@ var gem2Points;
 var gem3Points;
 var gem4Points;
 var gemPoints = [];
-var messageHTML = $(".message");
+var messageHTML = $(".message-holder");
+var initialMessage =
+  "<div class='message'><p class='winMessage'>Take a crack and show your competence at conquering this crystal calculation!</p></div>";
 var winMessage =
-  "<p class='winMessage'>You won! Good work! Try to match this new number!</p>";
+  "<div class='message'><p class='winMessage'>You won! Good work! Try to match this new number!</p></div>";
 var loseMessage =
-  "<p class='winMessage'>Oh no, you lost. Try again with this number!</p>";
+  "<div class='message'><p class='winMessage'>Oh no, you lost. Try again with this number!</p></div>";
 
 //////////////  FUNCTIONS  ///////////////
 //Function to set randNumber as a random number in the range of 19-120 and update the displayed number to match.
@@ -89,8 +91,14 @@ function initializePlay() {
   gemPointsSet();
 }
 
+function loadMessage() {
+  messageHTML.html(initialMessage);
+}
+
 // Make page ready to play on load.
 initializePlay();
+
+loadMessage();
 
 // Make sure DOM is ready before playing.
 $(document).ready(function() {
@@ -102,13 +110,11 @@ $(document).ready(function() {
     console.log("new user score is: " + userScore);
     updateUserScore();
     if (userScore === randNumber) {
-      alert("you won");
       wins++;
       updateWins();
       displayWin();
       initializePlay();
     } else if (userScore > randNumber) {
-      alert("game over");
       losses++;
       updateLosses();
       displayLose();
@@ -123,13 +129,11 @@ $(document).ready(function() {
     console.log("new user score is: " + userScore);
     updateUserScore();
     if (userScore === randNumber) {
-      alert("you won");
       wins++;
       updateWins();
       displayWin();
       initializePlay();
     } else if (userScore > randNumber) {
-      alert("game over");
       losses++;
       updateLosses();
       displayLose();
@@ -144,13 +148,11 @@ $(document).ready(function() {
     console.log("new user score is: " + userScore);
     updateUserScore();
     if (userScore === randNumber) {
-      alert("you won");
       wins++;
       updateWins();
       displayWin();
       initializePlay();
     } else if (userScore > randNumber) {
-      alert("game over");
       losses++;
       updateLosses();
       displayLose();
@@ -165,13 +167,11 @@ $(document).ready(function() {
     console.log("new user score is: " + userScore);
     updateUserScore();
     if (userScore === randNumber) {
-      alert("you won");
       wins++;
       updateWins();
       displayWin();
       initializePlay();
     } else if (userScore > randNumber) {
-      alert("game over");
       losses++;
       updateLosses();
       displayLose();
