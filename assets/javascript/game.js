@@ -26,7 +26,7 @@ var loseMessage =
 
 function randomNumber() {
   randNumber = 19 + Math.floor(Math.random() * 102);
-  console.log("random number is: " + randNumber);
+  // console.log("random number is: " + randNumber);
   displayRandNumber();
 }
 
@@ -69,16 +69,16 @@ function displayLose() {
 function gemPointsSet() {
   for (i = 0; i < 4; i++) {
     gemPoints[i] = 1 + Math.floor(Math.random() * 13);
-    console.log("gemPoints array: " + gemPoints);
+    // console.log("gemPoints array: " + gemPoints);
   }
   gem1Points = gemPoints[0];
   gem2Points = gemPoints[1];
   gem3Points = gemPoints[2];
   gem4Points = gemPoints[3];
-  console.log("gem 1 points: " + gem1Points);
-  console.log("gem 2 points: " + gem2Points);
-  console.log("gem 3 points: " + gem3Points);
-  console.log("gem 4 points: " + gem4Points);
+  // console.log("gem 1 points: " + gem1Points);
+  // console.log("gem 2 points: " + gem2Points);
+  // console.log("gem 3 points: " + gem3Points);
+  // console.log("gem 4 points: " + gem4Points);
   // Could this be done with a loop? D.R.Y. .... hmmm.
 }
 
@@ -101,13 +101,13 @@ initializePlay();
 loadMessage();
 
 // Make sure DOM is ready before playing.
-$(document).ready(function() {
+$(document).ready(function () {
   ///////////  EVENT HANDLERS  ////////////////
   // Gem 1 "on click"
-  $(".gem1").on("click", function() {
+  $(".gem1").on("click", function () {
     messageHTML.html("");
     userScore = userScore + gem1Points;
-    console.log("new user score is: " + userScore);
+    // console.log("new user score is: " + userScore);
     updateUserScore();
     if (userScore === randNumber) {
       wins++;
@@ -123,10 +123,10 @@ $(document).ready(function() {
   });
 
   // Gem 2 "on click"
-  $(".gem2").on("click", function() {
+  $(".gem2").on("click", function () {
     messageHTML.html("");
     userScore = userScore + gem2Points;
-    console.log("new user score is: " + userScore);
+    // console.log("new user score is: " + userScore);
     updateUserScore();
     if (userScore === randNumber) {
       wins++;
@@ -142,10 +142,10 @@ $(document).ready(function() {
   });
 
   // Gem 3 "on click"
-  $(".gem3").on("click", function() {
+  $(".gem3").on("click", function () {
     messageHTML.html("");
     userScore = userScore + gem3Points;
-    console.log("new user score is: " + userScore);
+    // console.log("new user score is: " + userScore);
     updateUserScore();
     if (userScore === randNumber) {
       wins++;
@@ -161,10 +161,10 @@ $(document).ready(function() {
   });
 
   // Gem 4 "on click"
-  $(".gem4").on("click", function() {
+  $(".gem4").on("click", function () {
     messageHTML.html("");
     userScore = userScore + gem4Points;
-    console.log("new user score is: " + userScore);
+    // console.log("new user score is: " + userScore);
     updateUserScore();
     if (userScore === randNumber) {
       wins++;
