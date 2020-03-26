@@ -9,3 +9,5 @@ You win the game if you get your score to match the given number. If you go over
 Each time you play, the number to match and the crystal values will change. (Randomly generated numbers. The number to match is between 19 & 120, and each gems value is between 1 & 12)
 
 Link to the deployed page: https://aaron-g18.github.io/unit-4-game/
+
+For this project I used HTML, CSS, JavaScript, and JQuery.
